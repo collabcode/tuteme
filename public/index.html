@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMX with Milligram and Alpine.js</title>
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+    <!-- Alpine.js -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js" defer></script>
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HTMX + Milligram + Alpine.js</h1>
+            <p>A simple, responsive webpage using modern tools.</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Dynamic Content with HTMX</h2>
+                <button hx-get="/example-endpoint" hx-target="#dynamic-content" class="button">Load Content</button>
+                <div id="dynamic-content" style="margin-top: 20px;">
+                    <!-- Content will be dynamically loaded here -->
+                </div>
+            </section>
+
+            <section x-data="{ count: 0 }">
+                <h2>Interactive Counter with Alpine.js</h2>
+                <p>Count: <span x-text="count"></span></p>
+                <button @click="count++" class="button">Increment</button>
+                <button @click="count--" class="button button-outline">Decrement</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>Built with ❤️ using HTMX, Milligram, and Alpine.js</p>
+        </footer>
+    </div>
+</body>
+</html>
