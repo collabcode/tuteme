@@ -10,33 +10,38 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js" defer></script>
     <!-- HTMX -->
     <script src="https://unpkg.com/htmx.org"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/images/favicon_io/favicon.ico">
-    <script src="static/js/script.js" defer></script> 
+    <script src="js/script.js" defer></script> 
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Hello World</h1>
+            <ul>
+                <li><a href="#story1" onclick="loadStory('story1')">The Little Seed</a></li> 
+            </ul> 
         </header>
 
         <main>
-      
-      
-    <div class="container">
-        <h1 class="text-center">Welcome to the Storybook</h1>
+            <div id="story-container">
+                <div class="my-element">Welcome</div>
+                
+                <script>
+                    // This tween will rotate an element with a class of .my-element
+                    gsap.to('.my-element', {
+                    rotation: 360,
+                    duration: 2,
+                    ease: 'bounce.out'
+                    })
+                </script>
+            </div>
 
-        <p>Choose a story to begin:</p>
+        </main>
 
-        <ul>
-            <li><a href="story1.html">The Little Seed</a></li> 
-        </ul> 
-
-    </div>
-  </main>
-
-        <footer>
-            <p>Built with ❤️ using HTMX, Milligram, and Alpine.js</p>
-        </footer>
     </div>
 </body>
 </html>
