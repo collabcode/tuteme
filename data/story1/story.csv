@@ -1,0 +1,12 @@
+StartTime,EndTime,ElementId,AnimationType,Params,Narration
+00:00:00,00:00:05,ground,fadeIn,, "Once upon a time, there was a tiny seed."
+00:00:05,00:00:10,seed,fadeIn,x:50px; y:50px, "It lay sleeping in the warm earth."
+00:00:10,00:00:15,sun,fadeIn,, "The sun shone brightly down."
+00:00:15,00:00:20,sun,pulse,duration:1; repeat:-1, "Warming the ground."
+00:00:20,00:00:25,rain,fadeIn,, "Gentle rain began to fall."
+00:00:25,00:00:30,rain,moveDown,y:100px; duration:1; repeat:-1, "Nourishing the tiny seed."
+00:00:30,00:00:35,seed,scaleUp,scale:1.5; duration:2, "The seed started to grow!"
+00:00:35,00:00:40,sprout,fadeIn,x:50px; y:20px, "A tiny sprout pushed its way through the soil."
+00:00:40,00:00:45,sprout,grow,y:-50px; duration:3, "Reaching for the sun."
+00:00:45,00:00:50,leaves,fadeIn,, "Soon, tiny leaves began to unfold."
+00:00:50,00:00:55,flower,fadeIn,, "And finally, a beautiful flower bloomed!"

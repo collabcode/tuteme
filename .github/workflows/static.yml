@@ -31,6 +31,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.9' # Or your desired Python version
+
+      - name: Generate files
+        run: |
+          python backend/process_story.py 
+          
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Generate files" 
+          file_pattern: "public/data/*" # Adjust pattern as needed
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
