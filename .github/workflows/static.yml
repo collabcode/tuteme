@@ -45,7 +45,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Generate files" 
-          file_pattern: "public/data/*" # Adjust pattern as needed
+          file_pattern: "public/data/story1/story.json" # Adjust pattern as needed
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
