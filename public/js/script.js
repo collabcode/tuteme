@@ -37,7 +37,7 @@ function playStory() {
 
     // Apply element-specific styles from CSV
     if (currentStep.ElementStyles) {
-      element.style.cssText = currentStep.ElementStyles; 
+      // element.style.cssText = currentStep.ElementStyles; 
     }
 
     gsap.to(element, {
