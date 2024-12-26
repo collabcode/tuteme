@@ -44,6 +44,10 @@ function playStory() {
       opacity: 1,
       duration: 0.5,
     }).eventCallback('onComplete', () => {
+      // Play the corresponding audio file
+      const audio = new Audio(`data/${storyName}/audio/${currentStepIndex}.mp3`); 
+      audio.play(); 
+  
       currentStepIndex++;
       const waitTime = (moment.duration(currentStep.EndTime, 'mm:ss:SS').asMilliseconds() - 
                        moment.duration(currentStep.StartTime, 'mm:ss:SS').asMilliseconds())/100;

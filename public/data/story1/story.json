@@ -5,12 +5,9 @@
         "ElementId": "ground",
         "AnimationType": "fadeIn",
         "Params": "",
-        "Narration": "\"Once upon a time",
-        "RemoveElements": "there was a tiny seed.\"",
-        "ElementStyles": " ",
-        "null": [
-            " \"background-color: green; width: 100%; height: 50vh; bottom: 0;\" "
-        ]
+        "Narration": "Once upon a time, there was a tiny seed.",
+        "RemoveElements": "",
+        "ElementStyles": "background-color: green; width: 100%; height: 50vh; bottom: 0;"
     },
     {
         "StartTime": "00:05:00",
@@ -18,9 +15,9 @@
         "ElementId": "seed",
         "AnimationType": "fadeIn",
         "Params": "x:50px; y:50px",
-        "Narration": "\"It lay sleeping in the warm earth.\"",
+        "Narration": "It lay sleeping in the warm earth.",
         "RemoveElements": "",
-        "ElementStyles": " \"width: 50px; height: 50px; background-color: brown; border-radius: 50%;\""
+        "ElementStyles": "width: 50px; height: 50px; background-color: brown; border-radius: 50%;"
     },
     {
         "StartTime": "00:10:00",
@@ -28,9 +25,9 @@
         "ElementId": "sun",
         "AnimationType": "fadeIn",
         "Params": "",
-        "Narration": "\"The sun shone brightly down.\"",
+        "Narration": "The sun shone brightly down.",
         "RemoveElements": "",
-        "ElementStyles": " \"width: 100px; height: 100px; background-color: yellow; border-radius: 50%;\""
+        "ElementStyles": "width: 100px; height: 100px; background-color: yellow; border-radius: 50%;"
     },
     {
         "StartTime": "00:15:00",
@@ -38,7 +35,7 @@
         "ElementId": "sun",
         "AnimationType": "pulse",
         "Params": "duration:1; repeat:-1",
-        "Narration": "\"Warming the ground.\"",
+        "Narration": "Warming the ground.",
         "RemoveElements": "",
         "ElementStyles": null
     },
@@ -48,9 +45,9 @@
         "ElementId": "rain",
         "AnimationType": "fadeIn",
         "Params": "",
-        "Narration": "\"Gentle rain began to fall.\"",
+        "Narration": "Gentle rain began to fall.",
         "RemoveElements": "",
-        "ElementStyles": " \"width: 10px; height: 20px; background-color: lightblue; border-radius: 2px;\""
+        "ElementStyles": "width: 10px; height: 20px; background-color: lightblue; border-radius: 2px;"
     },
     {
         "StartTime": "00:35:00",
@@ -58,7 +55,7 @@
         "ElementId": "rain",
         "AnimationType": "moveDown",
         "Params": "y:100px; duration:1; repeat:-1",
-        "Narration": "\"Nourishing the tiny seed.\"",
+        "Narration": "Nourishing the tiny seed.",
         "RemoveElements": "",
         "ElementStyles": null
     },
@@ -68,7 +65,7 @@
         "ElementId": "seed",
         "AnimationType": "scaleUp",
         "Params": "scale:1.5; duration:2",
-        "Narration": "\"The seed started to grow!\"",
+        "Narration": "The seed started to grow!",
         "RemoveElements": "seed",
         "ElementStyles": null
     },
@@ -78,9 +75,9 @@
         "ElementId": "sprout",
         "AnimationType": "fadeIn",
         "Params": "x:50px; y:20px",
-        "Narration": "\"A tiny sprout pushed its way through the soil.\"",
+        "Narration": "A tiny sprout pushed its way through the soil.",
         "RemoveElements": "seed",
-        "ElementStyles": " \"width: 20px; height: 40px; background-color: green;\""
+        "ElementStyles": "width: 20px; height: 40px; background-color: green;"
     },
     {
         "StartTime": "01:05:00",
@@ -88,7 +85,7 @@
         "ElementId": "sprout",
         "AnimationType": "grow",
         "Params": "y:-50px; duration:3",
-        "Narration": "\"Reaching for the sun.\"",
+        "Narration": "Reaching for the sun.",
         "RemoveElements": "",
         "ElementStyles": null
     },
@@ -98,12 +95,9 @@
         "ElementId": "leaves",
         "AnimationType": "fadeIn",
         "Params": "",
-        "Narration": "\"Soon",
-        "RemoveElements": "tiny leaves began to unfold.\"",
-        "ElementStyles": " sprout",
-        "null": [
-            " \"width: 30px; height: 20px; background-color: green; position: absolute; top: -10px; left: -15px;\""
-        ]
+        "Narration": "Soon, tiny leaves began to unfold.",
+        "RemoveElements": "sprout",
+        "ElementStyles": "width: 30px; height: 20px; background-color: green; position: absolute; top: -10px; left: -15px;"
     },
     {
         "StartTime": "01:30:00",
@@ -111,12 +105,11 @@
         "ElementId": "flower",
         "AnimationType": "fadeIn",
         "Params": "",
-        "Narration": "\"And finally",
-        "RemoveElements": "a beautiful flower bloomed!\"",
-        "ElementStyles": " sprout",
+        "Narration": "And finally, a beautiful flower bloomed!",
+        "RemoveElements": "sprout",
+        "ElementStyles": "leaves",
         "null": [
-            " leaves",
-            " \"width: 40px; height: 40px; background-color: red; border-radius: 50%; position: absolute; top: -20px;\""
+            "width: 40px; height: 40px; background-color: red; border-radius: 50%; position: absolute; top: -20px;"
         ]
     }
 ]
