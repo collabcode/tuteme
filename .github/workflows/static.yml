@@ -45,8 +45,8 @@ jobs:
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Generate files" 
-          file_pattern: "public/data/story1/story.json" # Adjust pattern as needed
+          commit_message: "Data files pushed during build" 
+          file_pattern: "public/data/*" # Adjust pattern as needed
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
