@@ -75,8 +75,8 @@ function playStory() {
     }
 
     gsap.to(element, {
-      opacity: 10,
-      duration: 2,
+      opacity: 1,
+      duration: 3,
     }).eventCallback('onComplete', () => {
       // Play the corresponding audio file
       const audio = new Audio(`data/${storyName}/audio/${currentStepIndex}.mp3`); 
@@ -92,6 +92,7 @@ function playStory() {
 }
 
 function loadStory(storyname) {
+  storyContainer.innerHTML = '<div class="loader"></div>'
 fetch(`data/${storyname}/story.json`)
   .then(response => response.json())
   .then(data => {
